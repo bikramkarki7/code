@@ -11,16 +11,39 @@
 // let c = ++a;
 
 // console.log(a, b, c);
-console.log("A");
+// console.log("A");
 
-setTimeout(() => {
-  console.log("B");
-}, 0);
+// setTimeout(() => {
+//   console.log("B");
+// }, 0);
 
-Promise.resolve().then(() => {
-  console.log("C");
-});
+// Promise.resolve().then(() => {
+//   console.log("C");
+// });
 
-console.log("D");
+// console.log("D");
+//futsatshal rule 
+const futsalRules = {
+  playersPerTeam: 5,
+  matchDuration: {
+    halves: 2,
+    minutesPerHalf: 20
+  },
+  substitutions: "Unlimited (flying subs)",
+  ball: "Size 4",
+  fouls: {
+    maxBeforePenalty: 5,
+    penaltyAfter: "6th foul = 10m penalty"
+  },
+  goalkeeperRules: {
+    ballHoldSeconds: 4,
+    backPassAllowed: false
+  }
+};
+
+// Example usage
+console.log(`Players per team: ${futsalRules.playersPerTeam}`);
+console.log(`Match time: ${futsalRules.matchDuration.minutesPerHalf} minutes per half`);
+
 
 
