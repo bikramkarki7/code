@@ -44,6 +44,10 @@ const futsalRules = {
 // Example usage
 console.log(`Players per team: ${futsalRules.playersPerTeam}`);
 console.log(`Match time: ${futsalRules.matchDuration.minutesPerHalf} minutes per half`);
+const wait = ms => new Promise(r => setTimeout(r, ms));
+
+wait(1000).then(() => console.log("Done"));
+
 
 
 
