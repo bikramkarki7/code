@@ -56,6 +56,10 @@ if (guess == number) {
 } else {
   alert(" You lose! The number was " + number);
 }
+import { add, multiply } from 'mathjs';
+
+console.log(add(5, 7));        // 12
+console.log(multiply(4, 6));   // 24
 
 
 
