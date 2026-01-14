@@ -62,29 +62,52 @@
 // console.log(multiply(4, 6));   // 24
 // Simple to-do list logic
 
-const todos = [];
+// const todos = [];
 
-function addTodo(text) {
-  todos.push(text);
-  showTodos();
-}
+// function addTodo(text) {
+//   todos.push(text);
+//   showTodos();
+// }
 
-function removeTodo(index) {
-  todos.splice(index, 1);
-  showTodos();
-}
+// function removeTodo(index) {
+//   todos.splice(index, 1);
+//   showTodos();
+// }
 
-function showTodos() {
-  console.clear();
-  todos.forEach((todo, i) => {
-    console.log(`${i + 1}. ${todo}`);
+// function showTodos() {
+//   console.clear();
+//   todos.forEach((todo, i) => {
+//     console.log(`${i + 1}. ${todo}`);
+//   });
+// }
+
+// // Example usage
+// addTodo("Learn JavaScript");
+// addTodo("Practice coding");
+// removeTodo(0);
+
+function getNumber() {
+  return new Promise((resolve, reject) => {
+    const success = true;
+
+    if (success) {
+      resolve(42);
+    } else {
+      reject("Something went wrong");
+    }
   });
 }
 
-// Example usage
-addTodo("Learn JavaScript");
-addTodo("Practice coding");
-removeTodo(0);
+async function showNumber() {
+  try {
+    const num = await getNumber();
+    console.log("Number:", num);
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+
+showNumber();
 
 
 
