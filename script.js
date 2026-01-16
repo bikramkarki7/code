@@ -112,15 +112,28 @@
 
 // Maghe Sankranti Greeting Script
 
-function magheSankrantiWish(name) {
-  const message = ` Happy Maghe Sankranti, ${name}! 
-May this festival bring health, happiness, and prosperity to your life.`;
+// function magheSankrantiWish(name) {
+//   const message = ` Happy Maghe Sankranti, ${name}! 
+// May this festival bring health, happiness, and prosperity to your life.`;
   
-  alert(message);
-}
-magheSankrantiWish("Friend");
+//   alert(message);
+// }
+// magheSankrantiWish("Friend");
 
-console.log(" Happy Maghe Sankranti!  May your life be filled with warmth and happiness.");
+// console.log(" Happy Maghe Sankranti!  May your life be filled with warmth and happiness.");
+// College information
+const collegeName = "Ncit";
+const location = "Kathmandu";
+const totalStudents = 2000;
+
+function showCollegeDetails() {
+  console.log("College Name:", collegeName);
+  console.log("Location:", location);
+  console.log("Total Students:", totalStudents);
+}
+
+showCollegeDetails();
+
 
 
 
