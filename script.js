@@ -134,11 +134,25 @@
 
 // showCollegeDetails();
 // app.js
-function greet(name) {
-  return `Hello, ${name}!`;
-}
+// function greet(name) {
+//   return `Hello, ${name}!`;
+// }
 
-console.log(greet("World"));
+// console.log(greet("World"));
+
+//dsap
+// Factorial
+const factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));
+
+// Fibonacci (nth term)
+const fibonacci = n => (n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2));
+
+// GCD (Euclidean Algorithm)
+const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+
+console.log(factorial(5));   // 120
+console.log(fibonacci(7));   // 13
+console.log(gcd(48, 18));    // 6
 
 
 
