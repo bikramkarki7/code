@@ -154,11 +154,28 @@ const factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));
 // console.log(fibonacci(7));   // 13
 // console.log(gcd(48, 18));    // 6
 
+// function greet(name) {
+//   return `Hello, ${name}!`;
+// }
+
+// console.log(greet("World"));
+
+
 function greet(name) {
   return `Hello, ${name}!`;
 }
 
-console.log(greet("World"));
+document.addEventListener("DOMContentLoaded", () => {
+  console.log(greet("World"));
+
+  const button = document.getElementById("btn");
+  if (button) {
+    button.addEventListener("click", () => {
+      alert("Button clicked!");
+    });
+  }
+});
+
 
 
 
