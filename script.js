@@ -161,20 +161,28 @@ const factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));
 // console.log(greet("World"));
 
 
-function greet(name) {
-  return `Hello, ${name}!`;
+// function greet(name) {
+//   return `Hello, ${name}!`;
+// }
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   console.log(greet("World"));
+
+//   const button = document.getElementById("btn");
+//   if (button) {
+//     button.addEventListener("click", () => {
+//       alert("Button clicked!");
+//     });
+//   }
+// });
+
+
+function sanitize(input) {
+  return input.replace(/[<>]/g, "");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  console.log(greet("World"));
-
-  const button = document.getElementById("btn");
-  if (button) {
-    button.addEventListener("click", () => {
-      alert("Button clicked!");
-    });
-  }
-});
+const userInput = "<script>alert('Hacked!')</script>";
+console.log(sanitize(userInput));
 
 
 
