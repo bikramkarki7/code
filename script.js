@@ -177,12 +177,17 @@ const factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));
 // });
 
 
-function sanitize(input) {
-  return input.replace(/[<>]/g, "");
-}
+// function sanitize(input) {
+//   return input.replace(/[<>]/g, "");
+// }
 
-const userInput = "<script>alert('Hacked!')</script>";
-console.log(sanitize(userInput));
+// const userInput = "<script>alert('Hacked!')</script>";
+// console.log(sanitize(userInput));
+
+// goingHome.js
+const currentTime = new Date().getHours();
+console.log(currentTime >= 18 ? "It's time to go home!" : "Not yet, keep working!");
+
 
 
 
